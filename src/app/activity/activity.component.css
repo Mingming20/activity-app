@@ -1,0 +1,24 @@
+.text {
+    color: darkblue;
+    text-align: center;
+}
+.primary {
+    color:red;
+    font-size:  20px;
+    background-color: yellow;
+}
+#button1 {
+   background-color: green;
+   font-size:  20px;
+}
+#button2{
+    background-color: pink;
+    font-size:  20px;
+}
+#button3 {
+    font-size:  20px;
+}
+.image{
+    width: 600px;
+    height: 500px;
+}

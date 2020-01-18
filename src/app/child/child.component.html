@@ -1,0 +1,10 @@
+<fieldset>
+    <h2 class="text1">Child Template</h2>
+    <h3 class="text2">Fullname :  {{name}}</h3>
+    <h3 class="text2">Enrolled :  {{enrolled}}</h3>
+    <h3 class="text2">Gender :  {{gender}}</h3>
+    <button id="b1" class="btn btn-primary" (click) = "isApproved()">Approve</button>
+    <button id="b2" class="btn btn-primary" (click) = "isDeclined()">Decline</button>
+    <h3 class="h3text">List of Approved Applications: </h3>
+    <li *ngFor = "let app of approved">Name: {{app.name}} Status: {{app.status}} Gender: {{app.gender}}</li>
+</fieldset>

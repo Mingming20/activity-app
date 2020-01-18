@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<h1 class="text" [innerHtml]='title'></h1>
+<br>
+<div>
+    <button class="btn btn-primary" [class.primary] = "colorChange"> Register </button>
+    <button id = "button3" class = "btn btn-primary"  [style.font-size] = "fontSize ? '20px' : '10px'"> GO </button>
+    <button id="button1" class="btn btn-primary" (click) = "clickLogin()">Login</button>
+</div>
+<br>
+<img class="image" src= {{image1}}>

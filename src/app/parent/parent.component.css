@@ -1,0 +1,39 @@
+fieldset{
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    width: 500px;
+    border: 5px solid palevioletred;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+.text1{
+    color: darkblue;
+    text-align: center;
+}
+.input1{
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: orangered;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+button{
+    color: maroon;
+    background-color: yellow;
+}
+li{
+    font-size: 20px;
+    color: purple;
+    list-style-type: none;
+}
+.h3text {
+    border: 2px solid royalblue;
+    width: 250px;
+}

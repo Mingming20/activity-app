@@ -1,0 +1,19 @@
+<h1>This is Activity Number 5</h1>
+<fieldset>
+    <br>
+    <h2 class="text1">Parent Template</h2>
+    <input type="text" class="input1" placeholder="Fullname" [(ngModel)]="parentnamedata" /><br>
+    ENROLL?<input type="checkbox" [(ngModel)]="enroll" /><br>
+    GENDER : 
+    <select [(ngModel)]="selectGender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br><button class="btn btn-primary" (click)="submitClicked()">Submit</button>
+    <h4 *ngIf = "notified">Notifications : {{notified}}</h4>
+    <h3 class="h3text">List of Declined Applications:</h3>
+    <li *ngFor = "let dec of declined">Name :{{dec.name}} Status: {{dec.status}} Gender: {{dec.gender}}</li>
+</fieldset>
+<br>
+<app-child (notify) = "notified = $event"  (declinedPerson)="isDeclined()" [name]="namedata" [enrolled]="enrollment" [gender]="gender"></app-child>
+ 
